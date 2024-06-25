@@ -1,0 +1,315 @@
+@charset "utf-8";
+
+#wrap{}
+
+#header{
+    width: 100%;
+    height: 113px;
+    /* background-color: antiquewhite; */
+    position: absolute;
+}
+.head_inner{
+    width: 1200px;
+    margin: 0 auto;
+    /* background:#ddd; */
+}
+
+.head_top_menu{
+    height: 48px;
+    /* background-color: blueviolet; */
+}
+.head_top_menu ul{
+    text-align: right;
+}
+
+.head_top_menu ul li{
+    display: inline-block;
+}
+
+.head_top_menu ul li a{
+    display: block;
+    line-height: 48px;
+    padding: 0 10px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.gnb{
+    height: 65px;
+    /* background-color: aquamarine; */
+}
+
+.logo{float: left;
+    padding: 10px 0;
+}
+
+.logo a{
+    display: block;
+    width: 112px;
+    height: 45px;
+    background: url('../img/ico-zeus-logo.png') no-repeat ;
+    /* '../img/ico-zeus-logo.png 112 * 90 */
+    background-position: center top;
+    text-indent: -9999px;
+}
+
+.nav{float: right;}
+
+.nav ul{}
+
+.nav ul li{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.nav ul li a{
+    display: block;
+    line-height: 65px;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+#header:hover {background-color: white;}
+
+#header:hover .logo a{
+    background-position: center bottom;
+}
+
+#header:hover .head_top_menu a{
+    color: #888;
+}
+
+#header:hover .nav a{
+    color: #333;
+}
+
+/* container 영역 */
+#container{
+    width: 1920px;
+    margin: 0 auto;
+}
+
+/* img_slide 영역 */
+.img_slide{
+    height: 710px;
+}
+
+.img_slide a{}
+.img_slide a img{}
+
+
+/* ZEUS 클래식 여행 영역 */
+
+.classic{
+    padding-top: 80px;
+    overflow: hidden;
+    background-image: linear-gradient(#fff 0%, #fff 80%, #eee 80%, #eee 100%);
+}
+
+.classic h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.classic_list{
+    text-align: center;
+}
+
+.classic_list li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.classic_list li a{
+    display: block;
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+
+.classic_list li a:hover{
+    border-bottom: 2px solid hotpink;
+}
+
+.clssic_wrap{
+    width: 1200px;
+    margin: 50px auto 0;
+}
+.clssic_wrap ul{}
+
+.clssic_wrap ul li{
+    float: left;
+    width: 384px;
+    height: 520px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.clssic_wrap ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.clssic_wrap ul li a .top{
+    width: 60px;height: 70px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    margin-left: 50px;
+}
+.clssic_wrap ul li a .top span{
+    font-size: 12px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.clssic_wrap ul li a .c_txt{
+    width: 345px;
+    height: 246px;
+    background-color: transparent;
+    padding: 24px 15px;
+    color: white;
+    position: absolute;
+    left:50%;top: 420px;
+    transform: translateX(-50%);
+    transition: all 0.5s;
+}
+
+.clssic_wrap ul li a:hover .c_txt{
+    top: 200px;
+    background-color: white;
+}
+
+
+
+.clssic_wrap ul li a .c_txt h3{
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+.clssic_wrap ul li a .c_txt p{
+    line-height: 1.5;    
+    margin-bottom: 20px;
+    /* opacity: 0; */
+    display: none;
+
+}
+.clssic_wrap ul li a .c_txt p.price{
+    font-size: 30px;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+}
+.clssic_wrap ul li a .c_txt p.price span{
+    font-size: 20px;
+}
+
+
+.clssic_wrap ul li a:hover .c_txt h3{
+    color: #333;
+}
+
+.clssic_wrap ul li a:hover .c_txt p{
+    /* opacity: 1; */
+    display: block;
+    color: #666;
+}
+.clssic_wrap ul li a:hover .c_txt p.price{
+    color: #000
+}
+
+.c_wrap_01{
+    background-image: url('../img/classic01.jpg');
+}
+.c_wrap_02{
+    margin: 0 24px;
+    background-image: url('../img/classic02.jpg');
+}
+.c_wrap_03{
+    background-image: url('../img/classic03.jpg');
+}
+
+/* 스페셜 영역 */
+
+.s_wrap_01{
+    background-image: url('../img/special01.jpg');
+}
+.s_wrap_02{
+    background-image: url('../img/special02.jpg');
+    margin: 0 24px;
+}
+.s_wrap_03{
+    background-image: url('../img/special03.jpg');
+}
+
+
+/* 공지사항 영역 */
+
+.notice{
+    width: 100%;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.notice ul{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.notice ul li{
+    float: left;
+    width: calc(100% / 4);
+    text-align: center;
+    border-right: 1px dotted gray;
+}
+
+.notice ul li:last-child{
+    border-right: none !important;
+}
+
+.notice ul li a{
+    /* border: 1px solid red; */
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+.notice ul li span{
+    display: block;
+    width: 32px;
+    height: 34px;
+    margin: 10px auto;
+    background-image: url("../img/spr_icn.png");
+    background-position: -204px -253px;
+    text-indent: -9999px;
+}
+
+
+.notice ul li p{
+    line-height: 1.7;
+}
+
+.notice ul li span.n_1{}
+.notice ul li span.n_2{
+    background-position: -235px -253px;
+}
+.notice ul li span.n_3{
+    background-position: -270px -253px;
+}
+.notice ul li span.n_4{
+    background-position: -301px -253px;
+}
+
+
+
